@@ -5,6 +5,7 @@ const socketIO = require("socket.io");
 const qrcode = require("qrcode");
 const http = require("http");
 const fs = require("fs");
+const path = require("path");
 const { phoneNumberFormatter } = require("./helper/formatter");
 const { url } = require("inspector");
 const { response } = require("express");
@@ -16,6 +17,7 @@ const io = socketIO(server);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
 const SESSION_FILE_PATH = "./whatsapp-session.json";
 let sessionCfg;
