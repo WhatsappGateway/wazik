@@ -59,10 +59,6 @@ client.on("message", (msg) => {
     msg.reply("menu 3");
   } else if (msg.body == "4") {
     msg.reply("menu 4");
-  } else {
-    msg.reply(
-      "Selamat Datang Di Whatsapp Gateway Imigrasi Silahkan Tekan 1/2/3/4"
-    );
   }
 });
 
