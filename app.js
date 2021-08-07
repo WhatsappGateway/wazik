@@ -8,6 +8,7 @@ const fs = require("fs");
 const { phoneNumberFormatter } = require("./helper/formatter");
 const { url } = require("inspector");
 const { response } = require("express");
+const post = process.env.PORT || 8000;
 
 const app = express();
 const server = http.createServer(app);
@@ -158,6 +159,6 @@ app.post(
   }
 );
 
-server.listen(8000, function () {
-  console.log("App running on *: " + 8000);
+server.listen(port, function () {
+  console.log("App running on *: " + port);
 });
