@@ -8,7 +8,7 @@ const fs = require("fs");
 const { phoneNumberFormatter } = require("./helper/formatter");
 const { url } = require("inspector");
 const { response } = require("express");
-const post = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 
 const app = express();
 const server = http.createServer(app);
