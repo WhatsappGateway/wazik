@@ -42,7 +42,6 @@ node_modules/
 jspm_packages/
 whatsapp-session*.json
 package-lock.json
-public/vendor/
 
 # TypeScript v1 declaration files
 typings/
